@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertisseur Js</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Application de Convertisseur</title>
+  </head>
+  <body>
+    <h1>Convertisseur</h1>
+<div class="container">
+      <div class="box1">
+				<p>
+          <label for="decimal">Décimal&#160;: </label>
+          <input type="text" id="decimal" name="decimal" oninput="xdecimal()" />
+        </p>
+        <br />
+				<label for="base1">Base: </label>
+        <input
+          type="text"
+          name="base1"
+          id="base1"
+          value=""
+          oninput="setBase()"
+        />
+      </div>
+			<div class="box2">
+				<p>
+          <label for="hexadecimal">Hexadécimal&#160;: </label>
+          <input
+            type="text"
+            id="hexadecimal"
+            name="hexadecimal"
+            oninput="xhexadecimal()"
+          />
+				</p>
+	      <br />
+				<label for="base2">Base: </label>
+        <input type="text" name="base2" id="base2" oninput="setBase()" />
+	     </div>
+
+			 <div class="box3">
+				<p>
+          <label for="binaire">Binaire&#160;: </label>
+          <input type="text" id="binaire" name="binaire" oninput="xbinaire()" />
+
+        </p>
+        <br />
+
+        <label for="base3">Base: </label>
+        <input type="text" name="base3" id="base3" oninput="setBase()" />
+      </div>
+    </div>
+<script type="text/javascript" src="/script.js"></script>
+  </body>
+</html>
