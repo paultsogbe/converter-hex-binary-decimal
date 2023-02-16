@@ -12,8 +12,8 @@ function xhexadecimal() {
   hexadecimal = document.getElementById("hexadecimal");
   binaire = document.getElementById("binaire");
 
-  decimal.value = parseInt(xhexadecimal.value, 16);
-  binaire.value = parseInt(xhexadecimal.value, 16).toString(2);
+  decimal.value = parseInt(hexadecimal.value, 16);
+  binaire.value = parseInt(hexadecimal.value, 16).toString(2);
 }
 
 function xbinaire() {
@@ -21,8 +21,8 @@ function xbinaire() {
   hexadecimal = document.getElementById("hexadecimal");
   binaire = document.getElementById("binaire");
 
-  decimal.value = parseInt(xbinaire.value, 2);
-  hexadecimal.value = parseInt(xbinaire.value, 2).toString(16);
+  decimal.value = parseInt(binaire.value, 2);
+  hexadecimal.value = parseInt(binaire.value, 2).toString(16);
 }
 // Cette partie du code permet de faire des  calculer dans les bases
 function setBase() {
