@@ -13,46 +13,40 @@
     <div class="container">
         <div class="box1">
 		    <p>
-                <label for="decimal">Décimal&#160;: </label>
-                <input type="text" id="decimal" name="decimal" oninput="xdecimal()" />
+                <label for="number0">Nombre : </label>
+                <input type="text" id="number0" name="number0" oninput="updateField()" />
             </p>
             <br />
-		    <label for="base1">Base: </label>
+
+           
+		    <label for="base0">Base : </label>
             <input
             type="text"
-            name="base1"
-            id="base1"
+            name="base0"
+            id="base0"
             value=""
-            oninput="setBase()"
+            oninput="updateField()"
             />
         </div>
 	    <div class="box2">
 		    <p>
-                <label for="hexadecimal">Hexadécimal&#160;: </label>
+                <label for="number1">Nombre&#160;: </label>
                 <input
                 type="text"
-                id="hexadecimal"
-                name="hexadecimal"
-                oninput="xhexadecimal()"
+                id="number1"
+                name="number1"
+                oninput="updateField()"
+                disabled
                 />
 				</p>
 	        <br />
-			<label for="base2">Base: </label>
-            <input type="text" name="base2" id="base2" oninput="setBase()" />
+
+         
+
+
+			<label for="base1">Base: </label>
+            <input type="text" name="base1" id="base1" oninput="updateField()" />
 	    </div>
-
-		<div class="box3">
-		    <p>
-                <label for="binaire">Binaire&#160;: </label>
-                <input type="text" id="binaire" name="binaire" oninput="xbinaire()" />
-
-            </p>
-            <br />
-
-                <label for="base3">Base: </label>
-                <input type="text" name="base3" id="base3" oninput="setBase()" />
-        </div>
-    </div>
     <script type="text/javascript" src="/script.js"></script>
   </body>
 </html>
